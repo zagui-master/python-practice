@@ -1,0 +1,10 @@
+def menu():
+  print("----------------------------------")
+  print("    Estas son nuestras opciones")
+  print("   1 = Crear cuenta")
+  print("   2 = Saldo")
+  print("   3 = Retirar")
+  print("   4 = Depositar")
+  print("   5 = Transferir")
+  print("   6 = Salir")
+  print("----------------------------------")
