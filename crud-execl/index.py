@@ -96,13 +96,17 @@ while True:
 
         if estadoNuevo == "2":
             datosActualizados["estado"] = "En espera"
+
         elif estadoNuevo == "3":
             datosActualizados["estado"] = "En ejecucion"
+
         elif estadoNuevo == "4":
             datosActualizados["estado"] = "Por aprobar"
+
         elif estadoNuevo == "5":
             datosActualizados["estado"] = "Finalizada"
             datosActualizados["fecha finalizacion"] = str(now.day) + "/ " + str(now.month) + "/" + str(now.year)
+
         now = datetime.now()
         datosActualizados["fecha inicio"] = str(now.day) + "/ " + str(now.month) + "/" + str(now.year)
         update.actualizar(rutaExcel, id_Actualizar, datosActualizados)
